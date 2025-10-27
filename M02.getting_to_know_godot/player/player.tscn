@@ -53,7 +53,7 @@ z_index = 2
 shape = SubResource("1")
 
 [node name="ShakingCamera2D" type="Camera2D" parent="."]
-position = Vector2(0, -40.5866)
+position = Vector2(-2, -29)
 script = ExtResource("4")
 
 [node name="ExitDetector2D" type="Area2D" parent="."]
@@ -68,5 +68,6 @@ shape = SubResource("2")
 position = Vector2(0, 34.4444)
 
 [node name="DamageAudio" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(10, -22)
 
 [connection signal="area_entered" from="ExitDetector2D" to="." method="_on_ExitDetector2D_area_entered"]
